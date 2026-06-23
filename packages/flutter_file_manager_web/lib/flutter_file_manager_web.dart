@@ -96,7 +96,7 @@ class FlutterFileManagerWeb extends FileManagerPlatform {
       final writable = await fileHandle.createWritable();
       await writable?.write(bytes);
       await writable?.close();
-    } on Object catch (e) {
+    } on web.DOMException catch (e) {
       // Convert an abort error to a custom exception.
       if (e case web.DOMException(code: 20, name: 'AbortError')) {
         throw FileSaverCancelledException();
