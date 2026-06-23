@@ -28,7 +28,7 @@ dependencies:
       url: https://github.com/arxdeus/flutter_file_saver.git
       ref: main
       path: packages/flutter_file_manager_macos
-  flutter_file_manager_platform_interface: ^2.1.0
+  flutter_file_manager_platform_interface: ^2.1.1
   flutter_file_manager_web:
     git:
       url: https://github.com/arxdeus/flutter_file_saver.git
